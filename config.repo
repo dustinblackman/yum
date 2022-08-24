@@ -1,0 +1,6 @@
+[dustinblackman]
+name=Dustin Blackman
+baseurl=https://dustinblackman.github.io/yum/packages
+enabled=1
+gpgcheck=1
+gpgkey=https://dustinblackman.github.io/yum/key.public
