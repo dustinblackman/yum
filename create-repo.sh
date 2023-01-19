@@ -6,5 +6,5 @@ echo "$GPG_KEY" | gpg --import
 cd /repo/packages
 rpm --addsign *.rpm
 rm -rf repodata
-createrepo .
+createrepo_c --database --compatibility .
 gpg --detach-sign --armor repodata/repomd.xml
