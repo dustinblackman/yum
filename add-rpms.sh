@@ -8,6 +8,8 @@ DISTFOLDER="$3"
 
 docker build -t yum-deploy:local .
 
+rm -rf packages
+mkdir -p packages
 cat _redirects | grep 'https' | awk '{print $2}' | while read link; do
 	curl -L -o "packages/$(basename "$link")" "$link"
 done
