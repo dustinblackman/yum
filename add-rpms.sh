@@ -27,3 +27,6 @@ docker run -it -e "GPG_KEY=$(cat ~/.gpg/yum-private.key)" -v "$PWD:/repo" yum-de
 git add .
 git commit -m "add $APP $VERSION"
 git push
+
+rm packages/*.rpm
+npx wrangler pages deploy --project-name yum .
