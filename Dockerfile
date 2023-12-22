@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 fedora:37
+FROM fedora:37
 
 RUN dnf install -y createrepo_c rpm-sign
 
