@@ -1,6 +1,6 @@
-FROM fedora:37
+FROM fedora:39
 
-RUN dnf install -y createrepo_c rpm-sign
+RUN dnf install -y createrepo rpm-sign
 
 COPY ./rpmmacros /root/.rpmmacros
 COPY ./create-repo.sh /usr/bin/
