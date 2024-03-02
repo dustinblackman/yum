@@ -27,4 +27,4 @@ git commit -m "add $APP $VERSION"
 git push
 
 rm packages/*.rpm
-npx wrangler pages deploy --project-name yum .
+npx wrangler@3.30.1 pages deploy --project-name yum .
